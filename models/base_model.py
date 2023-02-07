@@ -16,3 +16,19 @@ class BaseModel:
         """Returns a printable representation of a BaseModel instance."""
         st = "[{}] ({}) {}".format(type(self).__name__, self.id, self.__dict__)
         return st
+
+    def save(self):
+        """
+        Method updates the attr -updated_at- with the current datetime
+        """
+        self.updated_at = datetime.now()
+
+    def to_dict(self):
+        """
+            returns the dictionary represntation of the object
+        """
+        dic = self.__dict__
+        dic['__class__'] = self.__class__.__name__
+        dic['created_at'] = self.created_at.isoformat()
+        dic['updated_at'] = self.updated_at.isoformat()
+        return dic
