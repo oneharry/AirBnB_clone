@@ -50,3 +50,51 @@ class TestBaseModel(unittest.TestCase):
         self.c_dic = self.c.to_dict()
         self.assertIsInstance(self.c_dic['updated_at'], str)
         self.assertIsInstance(self.c_dic['created_at'], str)
+
+    def test_recreated_inst_ID(self):
+        a = BaseModel()
+        a.name = "alx"
+        a_dic = a.to_dict()
+        b = BaseModel(**a_dic)
+        self.assertEqual(a.id, b.id)
+
+    def test_recreated_ins_attr(self):
+        a = BaseModel()
+        a.name = "alx"
+        a.task = 4
+        a_dic = a.to_dict()
+        b = BaseModel(**a_dic)
+        self.assertEqual(b.name, "alx")
+        self.assertEqual(b.task, 4)
+
+    def test_recreated_ins_created_at_type_is_datetime(self):
+        a = BaseModel()
+        a.name = "alx"
+        a.task = 4
+        a_dic = a.to_dict()
+        b = BaseModel(**a_dic)
+        self.assertIsInstance(b.created_at, datetime)
+
+    def test_recreated_ins_updated_at_type_is_datetime(self):
+        a = BaseModel()
+        a.task = 4
+        a_dic = a.to_dict()
+        b = BaseModel(**a_dic)
+        self.assertIsInstance(b.updated_at, datetime)
+
+    def test_recreated_isnot_original(self):
+        a = BaseModel()
+        a.name = "alx"
+        a.task = 4
+        a_dic = a.to_dict()
+        b = BaseModel(**a_dic)
+        self.assertIsNot(a, b)
+
+    def test_attr_with_empty_kwargs(self):
+        a = BaseModel()
+        a.name = "africa"
+        a_created = a.created_at
+        a_dic = a.to_dict()
+        b = BaseModel()
+        self.assertNotEqual(a.id, b.id)
+        self.assertGreater(b.created_at, a_created)
