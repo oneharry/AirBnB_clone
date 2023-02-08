@@ -5,6 +5,31 @@ from datetime import datetime
 
 
 class TestBaseModel(unittest.TestCase):
+    def test_instantiation(self):
+        b1 = BaseModel()
+        self.assertIsInstance(b1, BaseModel)
+
+    def test_unique_attributes(self):
+        b1 = BaseModel()
+        b2 = BaseModel()
+        self.assertNotEqual(b1.id, b2.id)
+        self.assertNotEqual(b1.created_at, b2.created_at)
+        self.assertNotEqual(b1.updated_at, b2.updated_at)
+
+    def test_attribute_type(self):
+        b1 = BaseModel()
+        self.assertEqual(str, type(b1.id))
+        self.assertEqual(datetime, type(b1.created_at))
+        self.assertEqual(datetime, type(b1.updated_at))
+
+    def test_str(self):
+        b1 = BaseModel()
+        s1 = b1.__str__()
+        self.assertIn("[BaseModel] ({})".format(b1.id), s1)
+        self.assertIn("'id': '{}'".format(b1.id), s1)
+        self.assertIn("'created_at': {}".format(repr(b1.created_at)), s1)
+        self.assertIn("'updated_at': {}".format(repr(b1.updated_at)), s1)
+
     def test_save_method(self):
         self.a = BaseModel()
         self.a_upd = self.a.updated_at
