@@ -2,7 +2,7 @@
 """This module contains a class `BaseModel`"""
 from datetime import datetime
 from uuid import uuid4
-from models import storage
+import models
 
 
 class BaseModel:
@@ -20,7 +20,7 @@ class BaseModel:
                     else:
                         self.__dict__[k] = v
         else:
-            storage.new(self)
+           models.storage.new(self)
 
     def __str__(self):
         """Returns a printable representation of a BaseModel instance."""
@@ -32,7 +32,7 @@ class BaseModel:
         Method updates the attr -updated_at- with the current datetime
         """
         self.updated_at = datetime.now()
-        storage.save()
+        models.storage.save()
 
     def to_dict(self):
         """

@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """This module contains the class `FileStorage`"""
 import json
+import sys
+from models.base_model import BaseModel
 
 
 class FileStorage:
@@ -15,12 +17,16 @@ class FileStorage:
         return FileStorage.__objects
 
     def new(self, obj):
-        """sets in __objects the obj with key <obj class name>.id"""
+        """
+        sets in __objects the obj with key <obj class name>.id
+        """
         obj_id = "{}.{}".format(type(obj).__name__, obj.id)
         FileStorage.__objects[obj_id] = obj
 
     def save(self):
-        """serializes __objects to the JSON file"""
+        """
+        Serializes __objects to the JSON file
+        """
         newdict = {k: v.to_dict() for k, v in FileStorage.__objects.items()}
         with open(FileStorage.__file_path, "w") as newfile:
             json.dump(newdict, newfile)
@@ -31,8 +37,13 @@ class FileStorage:
         (only if the JSON file (__file_path) exists; otherwise, nothing is done.
         If the file doesn’t exist, no exception is  raised)
         """
+        objects = {}
         try:
             with open(FileStorage.__file_path) as readfile:
-               FileStorage.__objects = json.load(readfile)
+                objects = json.load(readfile)
+                for k, obj_dict in objects.items():
+                    clsname = obj_dict.pop("__class__")
+                    obj = getattr(sys.modules[__name__], clsname)
+                    self.new(obj(**obj_dict))
         except FileNotFoundError:
             return
