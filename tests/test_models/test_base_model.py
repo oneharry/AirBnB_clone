@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+import models
 from models.base_model import BaseModel
 import unittest
 from datetime import datetime
 
 
 class TestBaseModel(unittest.TestCase):
-    def test_instantiation(self):
+    def test_no_args_instantiation(self):
         b1 = BaseModel()
         self.assertIsInstance(b1, BaseModel)
 
@@ -30,11 +31,14 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn("'created_at': {}".format(repr(b1.created_at)), s1)
         self.assertIn("'updated_at': {}".format(repr(b1.updated_at)), s1)
 
+    def test_new_instance_stored_in_objects(self):
+        self.assertIn(BaseModel(), models.storage.all().values())
+
     def test_save_method(self):
-        self.a = BaseModel()
-        self.a_upd = self.a.updated_at
-        self.a.save()
-        self.assertGreater(self.a.updated_at, self.a_upd)
+        a = BaseModel()
+        a_upd = a.updated_at
+        a.save()
+        self.assertGreater(a.updated_at, a_upd)
 
     def test_to_dict(self):
         self.b = BaseModel()
