@@ -34,7 +34,7 @@ class FileStorage:
     def reload(self):
         """
         Deserializes the JSON file to __objects
-        (only if the JSON file (__file_path) exists; otherwise, nothing is done.
+        (only if the JSON file (__file_path) exists; otherwise, nothing is done
         If the file doesn’t exist, no exception is  raised)
         """
         objects = {}

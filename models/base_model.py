@@ -20,7 +20,7 @@ class BaseModel:
                     else:
                         self.__dict__[k] = v
         else:
-           models.storage.new(self)
+            models.storage.new(self)
 
     def __str__(self):
         """Returns a printable representation of a BaseModel instance."""
@@ -38,7 +38,7 @@ class BaseModel:
         """
             returns the dictionary represntation of the object
         """
-        dic = self.__dict__
+        dic = self.__dict__.copy()
         dic['__class__'] = self.__class__.__name__
         dic['created_at'] = self.created_at.isoformat()
         dic['updated_at'] = self.updated_at.isoformat()
