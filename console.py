@@ -22,6 +22,22 @@ class HBNBCommand(cmd.Cmd):
         """ Does nothing when no command is passed """
         pass
 
+    def do_destroy(self, line):
+        """ Deletes an instance based on the <class name> and <id> """
+        args = line.split(" ")
+        if not args[0]:
+            print("** class name missing **")
+        elif args[0] and not args[0] in self.classes:
+            print("** class doesn't exist **")
+        elif args[0] and len(args) < 2:
+            print("** instance id missing **")
+        elif args[0] + "." + args[1] not in storage.all().keys():
+            print("** no instance found **")
+        else:
+            obj = storage.all()
+            del obj[args[0] + "." + args[1]]
+            storage.save()
+
     def do_create(self, args):
         """ Creates a new instance of BaseModel, saves it (to the JSON file)
         and prints the id."""
@@ -75,6 +91,37 @@ class HBNBCommand(cmd.Cmd):
             dic = dict(filter(lambda x: type(x[1]) == eval(cls), dic.items()))
         lobj = [str(v) for k, v in dic.items()]
         print(lobj)
+
+    def do_update(self, line):
+        """
+        Updates an instance based on the <class name> and <id> by:
+            adding or updating attribute( save the change into JSON file)
+        """
+        args = line.split(" ")
+        objs = storage.all()
+        if not args[0]:
+            print("** class name missing **")
+        elif args[0] and not args[0] in self.classes:
+            print("** class doesn't exist **")
+        elif args[0] and len(args) < 2:
+            print("** instance id missing **")
+        elif args[0] + "." + args[1] not in objs.keys():
+            print("** no instance found **")
+        elif args[0] and args[1] and len(args) < 3:
+            print("** attribute missing **")
+        elif args[2] and len(args) < 4:
+            print("** value missing **")
+        else:
+            my_obj = objs[args[0] + "." + args[1]]
+            if args[3].isdigit():
+                val = int(args[3])
+            elif args[3].isdecimal():
+                val = float(args[3])
+            else:
+                val = str(args[3])
+
+            my_obj.__dict__[args[2]] = eval(args[3])
+            storage.save()
 
 
 if __name__ == '__main__':
