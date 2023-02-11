@@ -10,7 +10,7 @@ class HBNBCommand(cmd.Cmd):
     """ Definition of command interpreter class"""
     prompt = "(hbnb) "
     classes = {"BaseModel": BaseModel,
-                "User": User}
+               "User": User}
 
     def do_quit(self, line):
         """ Exit the program """
