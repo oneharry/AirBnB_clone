@@ -10,5 +10,4 @@ class TestUser(unittest.TestCase):
         self.assertIsInstance(u1, User)
 
     def test_User_inherits_from_BaseModel(self):
-        u1 = User()
-        self.assertIsInstance(u1, BaseModel)
+        self.assertTrue(issubclass(User, BaseModel))
