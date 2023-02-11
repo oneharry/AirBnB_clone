@@ -133,6 +133,38 @@ class HBNBCommand(cmd.Cmd):
             my_obj.__dict__[args[2]] = args[3]
             storage.save()
 
+    def default(self, line):
+        """ Executed if the command entered is not defined
+        Split the value passed with '.' as separator
+        If first part is a valid class name eg User, Place etc:
+            split the second part with '(' as separator = cmd
+            check for the command entered
+            call the methods for this class __class__
+        """
+        args = line.split(".")
+        cls = args[0]
+        cmd = args[1].split("(")[0]
+        if cls in __class__.classes and cmd == "all":
+            __class__.do_all(self, cls)
+        elif cls in __class__.classes and cmd == "show":
+            obj_id = ""
+            if args[1].split("(")[1].replace(")", ""):
+                obj_id = eval(args[1].split("(")[1].replace(")", ""))
+            __class__.do_show(self, cls + " " + obj_id)
+        elif cls in __class__.classes and cmd == "update":
+            method_args = args[1].split("(")[1].replace(")", "").split(", ")
+            obj_id = obj_att = obj_val = " "
+            if args[1].split("(")[1].replace(")", ""):
+                obj_id = method_args[0]
+            if len(method_args) >= 2:
+                obj_att = method_args[1]
+            if len(method_args) >= 3:
+                obj_val = method_args[2]
+            __class__.do_update(self, "{} {} {} {}".format(cls,
+                                obj_id, obj_att, obj_val))
+        elif cls not in __class__.classes:
+            print("** class doesn't exist **")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
