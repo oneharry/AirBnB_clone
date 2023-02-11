@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module contans a module 'User'"""
+"""This module contans a class 'User'"""
 from models.base_model import BaseModel
 
 
