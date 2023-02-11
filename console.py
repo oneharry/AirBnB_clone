@@ -1,14 +1,24 @@
 #!/usr/bin/python3
 """ Entry point to the command interpreter"""
 import cmd
+import shlex
 from models import storage
 from models.base_model import BaseModel
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
     """ Definition of command interpreter class"""
     prompt = "(hbnb) "
-    classes = {"BaseModel": BaseModel}
+    classes = {"BaseModel": BaseModel, "User": User, "State": State,
+               "City": City, "Amenity": Amenity, "Place": Place,
+               "Review": Review
+               }
 
     def do_quit(self, line):
         """ Exit the program """
@@ -97,7 +107,7 @@ class HBNBCommand(cmd.Cmd):
         Updates an instance based on the <class name> and <id> by:
             adding or updating attribute( save the change into JSON file)
         """
-        args = line.split(" ")
+        args = shlex.split(line)
         objs = storage.all()
         if not args[0]:
             print("** class name missing **")
@@ -120,7 +130,7 @@ class HBNBCommand(cmd.Cmd):
             else:
                 val = str(args[3])
 
-            my_obj.__dict__[args[2]] = eval(args[3])
+            my_obj.__dict__[args[2]] = args[3]
             storage.save()
 
 
