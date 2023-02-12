@@ -174,7 +174,6 @@ class HBNBCommand(cmd.Cmd):
                 dic = eval((values[1]))
                 for k, v in dic.items():
                     name = " " + k
-                    print(k)
                     value = " " + str(v)
                     methods[method](args[0] + " " + id + name + value)
 
