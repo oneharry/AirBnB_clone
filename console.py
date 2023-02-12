@@ -172,12 +172,11 @@ class HBNBCommand(cmd.Cmd):
                 values = mtd_val[1].replace(")", "").split(", ", 1)
                 id = values[0]
                 dic = eval((values[1]))
-                if True:
-                    for k, v in dic.items():
-                        name = " " + k
-                        print(k)
-                        value = " " + str(v)
-                        methods[method](args[0] + " " + id + name + value)
+                for k, v in dic.items():
+                    name = " " + k
+                    print(k)
+                    value = " " + str(v)
+                    methods[method](args[0] + " " + id + name + value)
 
             else:
                 values = mtd_val[1].replace(")", "").split(",")
