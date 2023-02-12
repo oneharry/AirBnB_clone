@@ -2,6 +2,7 @@
 """ Entry point to the command interpreter"""
 import cmd
 import shlex
+import json
 from models import storage
 from models.base_model import BaseModel
 from models.user import User
@@ -109,7 +110,7 @@ class HBNBCommand(cmd.Cmd):
         """
         args = shlex.split(line)
         objs = storage.all()
-        if not args[0]:
+        if not line:
             print("** class name missing **")
         elif args[0] and not args[0] in self.classes:
             print("** class doesn't exist **")
@@ -118,7 +119,7 @@ class HBNBCommand(cmd.Cmd):
         elif args[0] + "." + args[1] not in objs.keys():
             print("** no instance found **")
         elif args[0] and args[1] and len(args) < 3:
-            print("** attribute missing **")
+            print("** attribute name missing **")
         elif args[2] and len(args) < 4:
             print("** value missing **")
         else:
@@ -133,37 +134,64 @@ class HBNBCommand(cmd.Cmd):
             my_obj.__dict__[args[2]] = args[3]
             storage.save()
 
-    def default(self, line):
-        """ Executed if the command entered is not defined
-        Split the value passed with '.' as separator
-        If first part is a valid class name eg User, Place etc:
-            split the second part with '(' as separator = cmd
-            check for the command entered
-            call the methods for this class __class__
+    def do_count(self, args):
         """
+        Retrieves the number of instances of a class
+        """
+        dic = storage.all()
+        count = 0
+        if args:
+            largs = args.split()
+            cls = largs[0]
+            if cls not in self.classes:
+                print("** class doesn't exist **")
+                return False
+            dic = dict(filter(lambda x: type(x[1]) == eval(cls), dic.items()))
+        print(len(dic))
+
+    def default(self, line):
+        """
+        Method called on an input line when the command prefix
+        is not recognized.
+        """
+        methods = {
+                "all": self.do_all,
+                "show": self.do_show,
+                "count": self.do_count,
+                "destroy": self.do_destroy,
+                "update": self.do_update
+                }
+
         args = line.split(".")
-        cls = args[0]
-        cmd = args[1].split("(")[0]
-        if cls in __class__.classes and cmd == "all":
-            __class__.do_all(self, cls)
-        elif cls in __class__.classes and cmd == "show":
-            obj_id = ""
-            if args[1].split("(")[1].replace(")", ""):
-                obj_id = eval(args[1].split("(")[1].replace(")", ""))
-            __class__.do_show(self, cls + " " + obj_id)
-        elif cls in __class__.classes and cmd == "update":
-            method_args = args[1].split("(")[1].replace(")", "").split(", ")
-            obj_id = obj_att = obj_val = " "
-            if args[1].split("(")[1].replace(")", ""):
-                obj_id = method_args[0]
-            if len(method_args) >= 2:
-                obj_att = method_args[1]
-            if len(method_args) >= 3:
-                obj_val = method_args[2]
-            __class__.do_update(self, "{} {} {} {}".format(cls,
-                                obj_id, obj_att, obj_val))
-        elif cls not in __class__.classes:
-            print("** class doesn't exist **")
+        try:
+            clsname = args[0]
+            mtd_val = args[1].split("(")
+            method = mtd_val[0]
+
+            if "{" in mtd_val[1]:
+                values = mtd_val[1].replace(")", "").split(", ", 1)
+                id = values[0]
+                dic = eval((values[1]))
+                if True:
+                    for k, v in dic.items():
+                        name = " " + k
+                        print(k)
+                        value = " " + str(v)
+                        methods[method](args[0] + " " + id + name + value)
+
+            else:
+                values = mtd_val[1].replace(")", "").split(",")
+                id = values[0]
+                if len(values) > 1:
+                    name = " " + values[1]
+                    value = " " + values[2]
+                    methods[method](args[0] + " " + id + name + value)
+                else:
+                    methods[method](args[0] + " " + id)
+
+        except(IndexError, KeyError):
+            print("*** Unknown syntax: {}".format(line))
+            return False
 
 
 if __name__ == '__main__':
