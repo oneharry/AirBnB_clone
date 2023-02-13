@@ -15,3 +15,7 @@ class TestCity(unittest.TestCase):
     def test_City_inherits_from_BaseModel(self):
         """ tests if the class City inherited the class BaseModel """
         self.assertTrue(issubclass(City, BaseModel))
+
+
+if __name__ == "__main__":
+    unittest.main()

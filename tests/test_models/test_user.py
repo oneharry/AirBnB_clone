@@ -15,3 +15,7 @@ class TestUser(unittest.TestCase):
     def test_User_inherits_from_BaseModel(self):
         """ Tests if class user inherited from class BaseModel """
         self.assertTrue(issubclass(User, BaseModel))
+
+
+if __name__ == "__main__":
+    unittest.main()

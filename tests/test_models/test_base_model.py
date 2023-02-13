@@ -118,3 +118,7 @@ class TestBaseModel(unittest.TestCase):
         b = BaseModel()
         self.assertNotEqual(a.id, b.id)
         self.assertGreater(b.created_at, a_created)
+
+
+if __name__ == "__main__":
+    unittest.main()

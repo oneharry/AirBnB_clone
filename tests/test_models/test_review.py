@@ -15,3 +15,7 @@ class TestReview(unittest.TestCase):
     def test_Review_inherits_from_BaseModel(self):
         """ Tests if the class Review inherited class BaseModel """
         self.assertTrue(issubclass(Review, BaseModel))
+
+
+if __name__ == "__main__":
+    unittest.main()

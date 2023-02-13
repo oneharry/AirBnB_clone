@@ -15,3 +15,7 @@ class TestState(unittest.TestCase):
     def test_State_inherits_from_BaseModel(self):
         """ Tests if class State inherited from class BaseModel """
         self.assertTrue(issubclass(State, BaseModel))
+
+
+if __name__ == "__main__":
+    unittest.main()

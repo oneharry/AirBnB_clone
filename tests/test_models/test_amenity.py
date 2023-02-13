@@ -15,3 +15,7 @@ class TestAmenity(unittest.TestCase):
     def test_Amenity_inherits_from_BaseModel(self):
         """ Tests if Amenity class inherited the class BaseModel """
         self.assertTrue(issubclass(Amenity, BaseModel))
+
+
+if __name__ == "__main__":
+    unittest.main()
