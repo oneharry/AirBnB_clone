@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """This module contains tests for the console"""
-import unittest
-from unittest.mock import patch
 import sys
+sys.path.insert(0, '../')  # noqa: E402
 import os
-sys.path.insert(0, '../')
+import unittest
 from io import StringIO
+from unittest.mock import patch
 from console import HBNBCommand
 from models.engine.file_storage import FileStorage
 from models import storage
+
 
 class TestConsole(unittest.TestCase):
     """Specific tests for the console"""
@@ -23,6 +24,7 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("help quit")
             self.assertEqual(f.getvalue().strip(), msg)
+
     def test_quit(self):
         """ Test: quit cmd exits the program """
         with patch('sys.stdout', new=StringIO()) as f:
@@ -96,7 +98,8 @@ class TestConsole(unittest.TestCase):
 
     def test_show_instance(self):
         """ Test: returns the str representation of instance """
-        pass   
+        pass
+
 
 if __name__ == "__main__":
     unittest.main()
