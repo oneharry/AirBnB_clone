@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module contains tests for the console"""
+import unittest
 
 
 class TestConsole(unittest.TestCase):
