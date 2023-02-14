@@ -18,6 +18,13 @@ class TestUser(unittest.TestCase):
         """ Tests if class user inherited from class BaseModel """
         self.assertTrue(issubclass(User, BaseModel))
 
+    def test_attributes(self):
+        """ Validates that User has necessary attributes"""
+        self.assertTrue(hasattr(User(), "email"))
+        self.assertTrue(hasattr(User(), "password"))
+        self.assertTrue(hasattr(User(), "last_name"))
+        self.assertTrue(hasattr(User(), "first_name"))
+
     def test_new_instance_stored_in_objects(self):
         self.assertIn(User(), storage.all().values())
 
