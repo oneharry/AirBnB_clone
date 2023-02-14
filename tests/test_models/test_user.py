@@ -20,23 +20,25 @@ class TestUser(unittest.TestCase):
 
     def test_attributes(self):
         """ Validates that User has necessary attributes"""
-        self.assertTrue(hasattr(User(), "email"))
-        self.assertTrue(hasattr(User(), "password"))
-        self.assertTrue(hasattr(User(), "last_name"))
-        self.assertTrue(hasattr(User(), "first_name"))
+        us = User()
+        self.assertTrue(hasattr(us, "email"))
+        self.assertTrue(hasattr(us, "password"))
+        self.assertTrue(hasattr(us, "last_name"))
+        self.assertTrue(hasattr(us, "first_name"))
 
     def test_new_instance_stored_in_objects(self):
         self.assertIn(User(), storage.all().values())
 
     def test_attribute_types(self):
         """Validates attribute types"""
-        self.assertEqual(str, type(User().id))
-        self.assertEqual(datetime, type(User().created_at))
-        self.assertEqual(datetime, type(User().updated_at))
-        self.assertEqual(str, type(User.email))
-        self.assertEqual(str, type(User.password))
-        self.assertEqual(str, type(User.first_name))
-        self.assertEqual(str, type(User.last_name))
+        us = User()
+        self.assertEqual(str, type(us.id))
+        self.assertEqual(datetime, type(us.created_at))
+        self.assertEqual(datetime, type(us.updated_at))
+        self.assertEqual(str, type(us.email))
+        self.assertEqual(str, type(us.password))
+        self.assertEqual(str, type(us.first_name))
+        self.assertEqual(str, type(us.last_name))
 
 
 if __name__ == "__main__":
