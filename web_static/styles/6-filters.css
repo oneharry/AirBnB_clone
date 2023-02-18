@@ -51,7 +51,7 @@ ul {
 .popover h2 {
 	font-size: 16px;
 }
-.locations:hover + .popover {
+.locations:hover {
 	color: blue;
 }
 .amenities:hover {
