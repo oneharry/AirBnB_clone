@@ -25,6 +25,9 @@
 .locations, .amenities {
 	height: 100%;
 	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .locations {
 	border-right: 1px solid #DDDDDD;
@@ -38,7 +41,7 @@
 }
 .locations .lists, .amenities .lists {
 	width: 100%;
-	background-color: grey;
+	background-color: #FFFF00;
 	list-style: none;
 
 }
