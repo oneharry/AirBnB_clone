@@ -25,21 +25,22 @@
 .locations, .amenities {
 	height: 100%;
 	width: 25%;
-	text-align: center;
 }
 .locations {
 	border-right: 1px solid #DDDDDD;
 }
 .locations h3, .amenities h3 {
 	font-weight: 600px;
+	text-align: center;
 }
 .locations h4, .amenities h4 {
 	font-weight: 400px;
 	font-size: 14px;
+	text-align: center;
 }
 .locations .list, .locations ul, .amenities .lists {
 	width: 100%;
 	background-color: #FFFF00;
 	list-style: none;
-
+	margin: auto;
 }
