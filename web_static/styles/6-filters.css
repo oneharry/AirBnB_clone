@@ -51,7 +51,7 @@ ul {
 .popover h2 {
 	font-size: 16px;
 }
-.locations:hover + .locations .popover {
+.locations:hover + .popover {
 	display: block;
 }
 .amenities .popover:hover {
