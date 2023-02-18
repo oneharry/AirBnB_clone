@@ -48,10 +48,10 @@
 ul {
 	list-style: none;
 }
-.popover h2 {
+.locations .popover h2 {
 	font-size: 16px;
 }
-.locations:hover {
+.locations h2:hover {
 	color: blue;
 }
 .amenities:hover {
