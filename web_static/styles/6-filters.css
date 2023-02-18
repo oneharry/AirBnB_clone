@@ -39,4 +39,8 @@
 }
 .locations.lists, .amenities.lists {
 	display: flex;
+	width: 100%;
+	background-color: grey;
+	list-style: none;
+
 }
