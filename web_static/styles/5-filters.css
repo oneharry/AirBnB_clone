@@ -27,9 +27,8 @@
 	width: 25%;
 	margin: auto 10px;
 }
-.filters div:first-child {
+.locations {
 	border-right: 1px solid #DDDDDD;
-	color: yellow;
 }
 .locations h3, .amenities h3 {
 	font-weight: 600px;
