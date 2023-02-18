@@ -38,7 +38,7 @@
 	font-size: 14px;
 	text-align: center;
 }
-.locations .popover,.popover {
+.popover {
 	display: none;
 	width: 100%;
 	background-color: #FAFAFA;
@@ -52,8 +52,8 @@ ul {
 	font-size: 16px;
 }
 .locations:hover + .popover {
-	display: block;
+	color: blue;
 }
-.amenities .popover:hover {
+.amenities:hover {
 	display: block;
 }
