@@ -37,7 +37,7 @@
 	font-weight: 400px;
 	font-size: 14px;
 }
-.locations.lists, .amenities.lists {
+.locations .lists, .amenities .lists {
 	display: flex;
 	width: 100%;
 	background-color: grey;
