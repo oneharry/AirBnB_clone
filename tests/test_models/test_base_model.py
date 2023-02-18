@@ -48,8 +48,16 @@ class TestBaseModel(unittest.TestCase):
         a.save()
         self.assertGreater(a.updated_at, a_upd)
 
+    def test_save_updates_file(self):
+        """Save updates the json file"""
+        a = BaseModel()
+        a.save()
+        a_id = "BaseModel" + "." + a.id
+        with open("file.json", "r") as rdfile:
+            self.assertIn(a_id, rdfile.read())
+
     def test_to_dict(self):
-        """ Test the dictionary attribut values of instance """
+        """ Test the dictionary attribute values of instance """
         self.b = BaseModel()
         self.b.name = "airbnb"
         self.b.task = 3
