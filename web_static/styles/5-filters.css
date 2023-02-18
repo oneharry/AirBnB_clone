@@ -27,7 +27,7 @@
 	width: 25%;
 	margin: auto 10px;
 }
-.filters:first-child {
+.filters div:first-child {
 	border-right: 1px solid #DDDDDD;
 	color: green;
 }
