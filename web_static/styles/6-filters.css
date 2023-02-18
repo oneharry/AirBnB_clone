@@ -33,21 +33,17 @@
 .locations h3, .amenities h3 {
 	font-weight: 600px;
 	text-align: center;
-	background-color: blue;
 }
 .locations h4, .amenities h4 {
 	font-weight: 400px;
 	font-size: 14px;
 	text-align: center;
-	background-color: green;
-	margin-bottom: 0;
 }
 .popover {
 	visibility: hidden;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	margin-top: 0;
-	background-color: red;
 }
 ul {
 	list-style: none;
