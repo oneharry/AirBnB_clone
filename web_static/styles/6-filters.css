@@ -38,7 +38,7 @@
 	font-size: 14px;
 	text-align: center;
 }
-.popover {
+.locations .popover {
 	display: none;
 	width: 100%;
 	background-color: #FAFAFA;
