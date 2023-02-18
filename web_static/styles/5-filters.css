@@ -25,10 +25,10 @@
 .locations .amenities {
 	height: 100%;
 	width: 25%;
+	margin: auto 10px;
 }
 .filters:first-child {
 	border-right: 1px solid #DDDDDD;
-	color: green;
 }
 .locations h4 .amenities h3 {
 	font-weight: 600px;
