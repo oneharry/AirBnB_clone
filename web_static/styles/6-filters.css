@@ -55,5 +55,5 @@ ul {
 	visibility: visible;
 }
 .amenities:hover .popover {
-	background-color: yellow;
+	visibility: visible;
 }
