@@ -28,11 +28,12 @@
 }
 .filters:first-child {
 	border-right: 1px solid #DDDDDD;
+	color: green;
 }
-.locations, .amenities h3 {
+.locations h4 .amenities h3 {
 	font-weight: 600px;
 }
-.locations, .amenities h4 {
+.locations h4 .amenities h4 {
 	font-weight: 400px;
 	font-size: 14px;
 }
