@@ -43,7 +43,6 @@
 	width: 100%;
 	height: 100%;
 	background-color: #FAFAFA;
-	margin: auto;
 	border: 1px solid #DDDDDD;
 }
 ul {
@@ -53,8 +52,8 @@ ul {
 	font-size: 16px;
 }
 .locations:hover .popover {
-	visibility: visible,
+	visibility: visible;
 }
 .amenities:hover .popover {
-	visibility: visible,
+	visibility: visible;
 }
