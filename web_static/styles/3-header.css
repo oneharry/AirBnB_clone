@@ -4,3 +4,6 @@ header {
 	width: 100%
 	border-bottom: 1px solid #CCCCCC;
 }
+header.logo {
+	background-image: url("../images/logo.png");
+}
