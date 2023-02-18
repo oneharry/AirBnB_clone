@@ -51,8 +51,8 @@ ul {
 .locations .popover h2 {
 	font-size: 16px;
 }
-.locations:hover {
-	color: blue;
+.locations:hover + .locations .popover {
+	visibility: visible;
 }
 .amenities:hover {
 	background-color: yellow;
