@@ -14,8 +14,7 @@
 	border: none;
 	border-radius: 4px;
 	margin: auto;
-	position: absolute;
-	right: 30px;
+    margin-right: 30px;
 }
 .filters button:hover {
 	opacity: 90%;
