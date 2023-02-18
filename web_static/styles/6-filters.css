@@ -25,7 +25,7 @@
 .locations, .amenities {
 	height: 100%;
 	width: 25%;
-	margin: auto;
+	margin: auto 0;
 }
 .locations {
 	border-right: 1px solid #DDDDDD;
