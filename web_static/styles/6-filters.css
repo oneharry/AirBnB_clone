@@ -38,7 +38,7 @@
 	font-size: 14px;
 	text-align: center;
 }
-.locations .popover, .amenities .popover {
+.popover, .amenities .popover {
 	visibility: hidden;
 	width: 100%;
 	background-color: #FAFAFA;
@@ -51,9 +51,9 @@ ul {
 .locations .popover h2 {
 	font-size: 16px;
 }
-.locations:hover .locations .popover {
+.locations:hover .popover {
 	visibility: visible;
 }
-.amenities:hover .amenities .popover {
+.amenities:hover .popover {
 	background-color: yellow;
 }
