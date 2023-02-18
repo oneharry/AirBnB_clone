@@ -55,5 +55,5 @@ ul {
 	color: blue;
 }
 .amenities:hover {
-	display: block;
+	background-color: yellow;
 }
