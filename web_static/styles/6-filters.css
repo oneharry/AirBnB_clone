@@ -38,8 +38,8 @@
 	font-size: 14px;
 	text-align: center;
 }
-.locations .opover {
-	display: none;
+.locations .popover {
+	visibility: hidden;
 	width: 100%;
 	background-color: #FAFAFA;
 	margin: auto;
