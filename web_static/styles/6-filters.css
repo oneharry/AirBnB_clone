@@ -38,7 +38,7 @@
 	font-size: 14px;
 	text-align: center;
 }
-.popover, .amenities .popover {
+.popover {
 	visibility: hidden;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
