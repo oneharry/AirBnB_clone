@@ -42,6 +42,7 @@
 	visibility: hidden;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
+	margin: 0;
 }
 ul {
 	list-style: none;
