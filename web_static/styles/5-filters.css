@@ -26,6 +26,7 @@
 	height: 100%;
 	width: 25%;
 	margin: auto 10px;
+	color: red;
 }
 .filters:first-child {
 	border-right: 1px solid #DDDDDD;
