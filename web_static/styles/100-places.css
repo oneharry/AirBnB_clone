@@ -87,28 +87,28 @@ position: relative;
 	margin-top: 40px;
 	width: 300px;
 }
-.places .amenities h2, .reviews h2 {
+.places .amenities h2, .places .reviews h2 {
 	font-size: 16px;
 	border-bottom: 1px solid #DDDDDD;
 }
 ul {
 	list-style: none;
 }
-.amenities .pet {
+.places .amenities .pet {
 	background-image: url("../images/icon_pets.png");
 	background-repeat: no-repeat;
 }
-.amenities .tv {
+.places .amenities .tv {
 	background-image: url("../images/icon_tv.png");
 	background-repeat: no-repeat;
 }
-.amenities .wifi {
+.places .amenities .wifi {
 	background-image: url("../images/icon_wifi.png");
 	background-repeat: no-repeat;
 }
 .places .reviews h3 {
 	font-size: 14px;
 }
-.reviews p {
+.places .reviews p {
 	font-size: 12px;
 }
