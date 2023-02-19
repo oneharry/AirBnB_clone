@@ -23,6 +23,7 @@
 	width: 100px;
 	background-image: url("../images/icon_group.png");
 	background-repeat: no-repeat;
+	margin: 0;
 }
 .information .number_rooms {
 	width: 100px;
