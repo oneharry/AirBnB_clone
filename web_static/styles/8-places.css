@@ -5,9 +5,9 @@
 	width: 60px;
 	height: 60px;
 	font-size: 30px;
-	position: relative;
-	top: 5px;
-	right: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .price_by_night p {
 	margin: auto;
