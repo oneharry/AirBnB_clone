@@ -87,7 +87,7 @@ position: relative;
 	margin-top: 40px;
 	width: 300px;
 }
-.amenities h2, .reviews h2 {
+.places .amenities h2, .reviews h2 {
 	font-size: 16px;
 	border-bottom: 1px solid #DDDDDD;
 }
@@ -106,7 +106,7 @@ ul {
 	background-image: url("../images/icon_wifi.png");
 	background-repeat: no-repeat;
 }
-.reviews h3 {
+.places .reviews h3 {
 	font-size: 14px;
 }
 .reviews p {
