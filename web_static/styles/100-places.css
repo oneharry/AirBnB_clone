@@ -7,7 +7,7 @@
 	align-self: flex-start;
 	font-size: 30px;
 }
-.places div {
+.places .div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -92,6 +92,7 @@ position: relative;
 	font-size: 16px;
 	width: 100%;
 	border-bottom: 1px solid #DDDDDD;
+	text-align: start;
 }
 ul {
 	list-style: none;
@@ -107,6 +108,9 @@ ul {
 .places .amenities .wifi {
 	background-image: url("../images/icon_wifi.png");
 	background-repeat: no-repeat;
+}
+.places .amenities p {
+	text-align: start;
 }
 .places .reviews h3 {
 	font-size: 14px;
