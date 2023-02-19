@@ -4,7 +4,7 @@
 	flex-direction: column;
 }
 .places h1 {
-	position: absolute;
+	position: relative;
 	top: 7px;
 	left: 55px;
 	font-size: 30px;
