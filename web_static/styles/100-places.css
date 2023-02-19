@@ -83,7 +83,7 @@ position: relative;
 .places .max_guest p,.places .number_rooms p,.places .number_bathrooms p {
 	margin: auto auto 0;
 }
-.places.amenities, .reviews {
+.places.amenities, .places .reviews {
 	margin-top: 40px;
 	width: 100%;
 	display: flex;
