@@ -22,14 +22,17 @@
 .information .max_guest {
 	width: 100px;
 	background-image: url("../images/icon_group.png");
+	background-repeat: no-repeat;
 
 }
 .information .number_rooms {
 	width: 100px;
 	background-image: url("../images/icon_bed.png");
+	background-repeat: no-repeat;
 }
 
 .information .number_bathrooms {
 	width: 100px;
 	background-image: url("../images/icon_bath.png");
+	background-repeat: no-repeat;
 }
