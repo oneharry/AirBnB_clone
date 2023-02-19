@@ -44,12 +44,12 @@
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	margin-top: 0;
-	padding: 8px;
+	padding: 20px;
 }
 ul {
 	list-style: none;
 }
-.locations .popover h2 {
+.popover h2 {
 	font-size: 16px;
 }
 .locations:hover .popover {
