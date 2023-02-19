@@ -1,10 +1,11 @@
 .places {
 	display: flex;
+	position: relative;
 }
 .places h1 {
-	position: relative;
+	position: absolute;
 	top: 7px;
-	left: 15px;
+	left: 55px;
 	font-size: 30px;
 }
 .places article {
