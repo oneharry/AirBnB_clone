@@ -37,7 +37,9 @@ article h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	position: relative;
+	bottom: 35px;
+	left: 320px;
 }
 
 .information {
