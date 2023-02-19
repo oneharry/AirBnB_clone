@@ -36,6 +36,6 @@
 	background-image: url("../images/icon_bath.png");
 	background-repeat: no-repeat;
 }
-.max_guest, .number_rooms, .number_bathrooms {
+.max_guest p, .number_rooms p, .number_bathrooms p {
 	display: inline-block;
 }
