@@ -85,7 +85,7 @@ position: relative;
 }
 .amenities, .reviews {
 	margin-top: 40px;
-	width: 100%;
+	width: 300px;
 }
 .amenities h2, .reviews h2 {
 	font-size: 16px;
@@ -94,16 +94,14 @@ position: relative;
 ul {
 	list-style: none;
 }
-ul .pet {
+.amenities .pet {
 	background-image: url("../images/icon_pets.png");
 }
-ul .tv {
+.amenities .tv {
 	background-image: url("../images/icon_tv.png");
 }
-ul .wifi {
+.amenities .wifi {
 	background-image: url("../images/icon_wifi.png");
-}
-ul .pet, ul .tv, ul .wifi {
 }
 .reviews h3 {
 	font-size: 14px;
