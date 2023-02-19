@@ -63,7 +63,10 @@ article h2 {
 }
 .information .max_guest, .number_rooms, .number_bathrooms {
 	background-repeat: no-repeat;
+	background-position: center;
 	width: 100px;
+    margin: 0 auto auto;
+    margin-bottom: 10px;
 }
 .max_guest p, .number_rooms p, .number_bathrooms p {
 	margin: auto auto 0;
