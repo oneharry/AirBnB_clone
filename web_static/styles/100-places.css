@@ -10,8 +10,8 @@
 .places h1 {
 	font-size: 30px;
 	position: absolute;
-	top: 1px;
-	left: 40px;
+	bottom: 30px;
+	left: 60px;
 }
 .places article {
 	width: 390px;
