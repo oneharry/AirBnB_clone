@@ -47,8 +47,8 @@ article h2 {
 	border-top: 1px solid #DDDDDD;
 	border-bottom: 1px solid #DDDDDD;
 	display: flex;
-	margin-top: 0;
-	padding-top: 0;
+	justify-content: space-around;
+	text-align: center;
 }
 .information .max_guest {
 	background-image: url("../images/icon_group.png");
@@ -62,11 +62,8 @@ article h2 {
 	background-image: url("../images/icon_bath.png");
 }
 .information .max_guest, .number_rooms, .number_bathrooms {
-	background-position: center;
 	background-repeat: no-repeat;
 	width: 100px;
-	margin: 0 auto auto;
-	margin-bottom: 10px;
 }
 .max_guest p, .number_rooms p, .number_bathrooms p {
 	margin: auto auto 0;
