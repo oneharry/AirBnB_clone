@@ -1,8 +1,9 @@
 .places {
 	display: flex;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+	
 }
 .places h1 {
 	font-size: 30px;
@@ -20,7 +21,6 @@
 	border: 1px solid #FF5A5F;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 article h2 {
 	font-size: 30px;
