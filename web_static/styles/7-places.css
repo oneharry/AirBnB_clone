@@ -24,3 +24,13 @@
 	margin: 0 auto;
 }
 
+.places article {
+position: relative;
+}
+.places .div {
+	width: 100%;
+	height: 100%;
+}
+.places article h2 {
+	text-align: center;
+}
