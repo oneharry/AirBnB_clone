@@ -1,7 +1,6 @@
 .places {
 	display: flex;
 	position: relative;
-	flex-direction: column;
 }
 .places h1 {
 	position: relative;
