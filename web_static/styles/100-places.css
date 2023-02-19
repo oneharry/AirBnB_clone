@@ -96,12 +96,15 @@ ul {
 }
 .amenities .pet {
 	background-image: url("../images/icon_pets.png");
+	background-repeat: no-repeat;
 }
 .amenities .tv {
 	background-image: url("../images/icon_tv.png");
+	background-repeat: no-repeat;
 }
 .amenities .wifi {
 	background-image: url("../images/icon_wifi.png");
+	background-repeat: no-repeat;
 }
 .reviews h3 {
 	font-size: 14px;
