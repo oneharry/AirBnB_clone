@@ -65,25 +65,16 @@ article h2 {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100px;
-    margin: 0 auto auto;
-    margin-bottom: 10px;
 }
-.places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
+.places .max_guest ip, .places .number_rooms ip,.places .number_bathrooms ip {
 	margin: auto auto 0;
 }
-.amenities, .reviews {
+.places .amenities, .places .reviews {
 	margin-top: 40px;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	text-align: start;
 }
 .amenities h2, .reviews h2 {
 	font-size: 16px;
-	width: 100%;
 	border-bottom: 1px solid #DDDDDD;
-	text-align: start;
 }
 ul {
 	list-style: none;
@@ -101,8 +92,6 @@ ul {
 	background-repeat: no-repeat;
 }
 .amenities p {
-	margin: auto 0 auto auto;
-	text-align: center;
 }
 .reviews h3 {
 	font-size: 14px;
