@@ -3,10 +3,12 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+	position: relative;
 	
 }
 .places h1 {
 	font-size: 30px;
+	position: absolute;
 }
 .places article {
 	width: 390px;
