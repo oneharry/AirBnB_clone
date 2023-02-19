@@ -1,6 +1,9 @@
 .places article {
 position: relative;
 }
+.places article h2 {
+	text-align: center;
+}
 .price_by_night {
 	color: #FF5A5F;
 	border-radius: 50%;
@@ -9,8 +12,10 @@ position: relative;
 	height: 60px;
 	font-size: 30px;
 	position: relative;
-	bottom: 50px;
+	bottom: 35px;
 	left: 320px;
+	margin: 0;
+	padding: 0;
 
 }
 .price_by_night p {
