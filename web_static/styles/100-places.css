@@ -8,11 +8,6 @@
 .places h1 {
 	font-size: 30px;
 }
-.places .div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 .places article {
 	width: 390px;
 	margin: 20px;
