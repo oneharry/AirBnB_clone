@@ -1,13 +1,15 @@
 .places {
 	display: flex;
-	align-content: relative;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .places h1 {
-	position: relative;
-	top: 7px;
-	left: 55px;
+	align-self: flex-start;
 	font-size: 30px;
+}
+.place div {
+	display: flex;
+	flex-wrap: wrap;
 }
 .places article {
 	width: 390px;
