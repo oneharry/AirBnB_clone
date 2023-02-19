@@ -71,7 +71,7 @@ position: relative;
 .places .information .number_bathrooms {
 	background-image: url("../images/icon_bath.png");
 }
-.places .max_guest, .places .number_rooms, .places .number_bathrooms {
+.places .information .max_guest, .places .number_rooms, .places .number_bathrooms {
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100px;
