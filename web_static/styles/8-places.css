@@ -1,3 +1,6 @@
+.places article {
+position: relative;
+}
 .price_by_night {
 	color: #FF5A5F;
 	border-radius: 50%;
@@ -8,6 +11,10 @@
 	margin: auto;
 	margin-right: 0;
 	margin-bottom: 20px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+
 }
 .price_by_night p {
 	margin: auto;
