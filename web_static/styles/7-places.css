@@ -1,6 +1,7 @@
 .places {
 	display: flex;
-	position: relative;
+	align-content: relative;
+	flex-wrap: wrap;
 }
 .places h1 {
 	position: relative;
