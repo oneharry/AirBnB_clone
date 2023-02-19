@@ -73,14 +73,14 @@ position: relative;
 .places .information .number_bathrooms {
 	background-image: url("../images/icon_bath.png");
 }
-.max_guest, .number_rooms, .number_bathrooms {
+.places .max_guest, .places .number_rooms, .places .number_bathrooms {
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100px;
 	margin: 0 auto auto;
 	margin-bottom: 10px;
 }
-.max_guest p, .number_rooms p, .number_bathrooms p {
+.places .max_guest p,.places .number_rooms p,.places .number_bathrooms p {
 	margin: auto auto 0;
 }
 .places.amenities, .reviews {
