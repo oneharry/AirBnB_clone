@@ -37,8 +37,7 @@
 	background-repeat: no-repeat;
 }
 .max_guest, .number_rooms, .number_bathrooms {
-	margin: 0;
-	text-align: center;
+	background-position: center;
 }
 .max_guest p, .number_rooms p, .number_bathrooms p {
 	margin: auto auto 0;
