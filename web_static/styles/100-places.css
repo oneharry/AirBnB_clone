@@ -111,7 +111,7 @@ ul {
 	background-repeat: no-repeat;
 }
 .places .amenities p {
-	text-align: start;
+	margin: auto;
 }
 .places .reviews h3 {
 	font-size: 14px;
