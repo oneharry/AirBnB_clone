@@ -7,7 +7,7 @@
 	align-self: flex-start;
 	font-size: 30px;
 }
-.place div {
+.places div {
 	display: flex;
 	flex-wrap: wrap;
 }
