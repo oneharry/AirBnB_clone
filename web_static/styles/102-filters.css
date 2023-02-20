@@ -63,6 +63,6 @@ ul {
 
 @media screen and (max-width: 768) {
 	.filter {
-		width: 80%;
+		max-width: 70%;
 	}
 }
