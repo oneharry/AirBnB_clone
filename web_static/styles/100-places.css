@@ -84,6 +84,7 @@ article h2 {
 .amenities h2, .reviews h2 {
 	font-size: 16px;
 	border-bottom: 1px solid #DDDDDD;
+	text-align: start;
 }
 ul {
 	list-style: none;
@@ -107,7 +108,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	padding-left: 100px;
+	padding-left: 90px;
 }
 .places .pet p, .places .wifi p, .places .tv p {
 }
