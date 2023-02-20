@@ -4,13 +4,13 @@
 	justify-content: center;
 	width: 100%;
 	position: relative;
-	margin-top: 70px;
+	margin-top: 40px;
 	
 }
 .places h1 {
 	font-size: 30px;
 	position: absolute;
-	top: 0;
+	bottom: 300px;
 	left: 100px;
 }
 .places article {
