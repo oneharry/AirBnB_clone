@@ -68,7 +68,7 @@ ul {
 	}
 
 }
-@media scree and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	.filters {
 		max-width: 90%;
 		margin: 0 auto;
