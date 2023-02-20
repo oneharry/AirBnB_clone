@@ -75,7 +75,7 @@ article h2 {
 	
 }
 .places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
-	margin-bottom: 0;
+	padding-top: 30px;
 }
 .places .amenities, .places .reviews {
 	margin-top: 40px;
