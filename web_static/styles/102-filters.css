@@ -58,3 +58,11 @@ ul {
 .amenities:hover .popover {
 	visibility: visible;
 }
+
+/*RESPONSIVENESS*/
+
+@media only screen and (max-width: 768px) {
+	.filters button	{
+		right: 0;
+	}
+}
