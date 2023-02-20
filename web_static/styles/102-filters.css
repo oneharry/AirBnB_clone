@@ -64,6 +64,7 @@ ul {
 @media only screen and (max-width: 768px) {
 	.filters {
 		width: 80%;
+		margin: 0 auto;
 	}
 	.filters button	{
 		right: 50px;
