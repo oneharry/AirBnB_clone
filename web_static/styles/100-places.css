@@ -68,6 +68,9 @@ article h2 {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 .places .max_guest ip, .places .number_rooms ip,.places .number_bathrooms ip {
 	margin: auto auto 0;
