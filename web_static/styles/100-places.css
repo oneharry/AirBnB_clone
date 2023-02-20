@@ -101,15 +101,12 @@ ul {
 	background-repeat: no-repeat;
 }
 .places .amenities {
-	display: flex;
-	flex-direction: column;
 }
 .places .pet, .places .wifi, .places .tv {
 	background-position: left;
 	display: flex;
 	flex-direction: column;
-	margin: 15px auto;
-	font-size: 8px;
+	margin: 30px auto;
 }
 .amenities p {
 }
