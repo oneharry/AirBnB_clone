@@ -58,3 +58,11 @@ ul {
 .amenities:hover .popover {
 	visibility: visible;
 }
+
+/* RESPONSIVENES */
+
+@media screen and (max-width: 768) {
+	.filter {
+		width: 80%;
+	}
+}

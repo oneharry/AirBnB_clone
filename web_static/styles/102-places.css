@@ -121,7 +121,7 @@ ul {
 
 /* RESPONSIVENESS */
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	body {
 		overflow-x: auto;
 		max-width: 90%;
