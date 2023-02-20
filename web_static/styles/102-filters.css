@@ -63,6 +63,6 @@ ul {
 
 @media only screen and (max-width: 768px) {
 	.filters button	{
-		right: 0;
+		right: 50px;
 	}
 }
