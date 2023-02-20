@@ -31,9 +31,9 @@
 	border-right: 1px solid #DDDDDD;
 }
 .locations h3, .amenities h3 {
-	font-weight: 600px;
+	font-weight: 600;
 }
 .locations h4, .amenities h4 {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 14px;
 }

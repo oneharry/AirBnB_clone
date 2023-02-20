@@ -11,27 +11,27 @@
 		<link rel="icon" href="images/icon.png">
 	</head>
 	<body>
-		<header role="header">
+		<header>
 		</header>
 		<div class="container">
 			<section class="filters">
-				<button role="button">Search</button>
+				<button>Search</button>
 				<div class="locations">
 					<h3>States</h3>
 					<h4>Select state</h4>
-					<ul class="popover">
-						<li>
+					<ul  role="tablist" class="popover">
+						<li role="tab">
 							<h2>Lagos</h2>
-							<ul>
-								<li>Ikeja</li>
-								<li>Lekki</li>
+							<ul role="tablist">
+								<li role="tab">Ikeja</li>
+								<li role="tab">Lekki</li>
 							</ul>
 						</li>
-						<li>
+						<li role="tab">
 							<h2>California</h2>
-							<ul>
-								<li>San Franscisco</li>
-								<li>San Jose</li>
+							<ul role="tablist">
+								<li role="tab">San Franscisco</li>
+								<li role="tab">San Jose</li>
 							</ul>
 						</li>
 					</ul>
@@ -39,14 +39,14 @@
 				<div class="amenities">
 					<h3>Amenities</h3>
 					<h4>Select amenity</h4>
-					<ul class="popover">
-						<li>House 1</li>
-						<li>Bungalow</li>
-						<li>Full com</li>
+					<ul role="tablist" class="popover">
+						<li role="tab">House 1</li>
+						<li role="tab">Bungalow</li>
+						<li role="tab">Full com</li>
 					</ul>
 				</div>
 			</section>
-			<section class="places" aria-label="List of places available in the airbnb platform">
+			<section class="places">
 				<h1>Places</h1>
 				<article>
 					<h2>BestHomes</h2>
@@ -72,16 +72,16 @@
 					</div>
 					<div class="amenities">
 						<h2>Amenities</h2>
-						<ul>
-							<li class="wifi">WiFi</li>
-							<li class="tv">TV</li>
-							<li class="pet">Pets friendly</li>
+						<ul role="tablist">
+							<li role="tab" class="wifi">WiFi</li>
+							<li role="tab" class="tv">TV</li>
+							<li role="tab" class="pet">Pets friendly</li>
 						</ul>
 					</div>
 					<div class="reviews">
 						<h2>Reviews</h2>
-						<ul>
-							<li>
+						<ul role="tablist">
+							<li role="tab">
 								<h3>From Bob Dylan the 27th January 2017</h3>
 								<p>An amazing place</p>
 							</li>
@@ -112,15 +112,15 @@
 					</div>
 					<div class="amenities">
 						<h2>Amenities</h2>
-						<ul>
-							<li  class="wifi">WiFi</li>
+						<ul role="tablist">
+							<li role="tab" class="wifi">WiFi</li>
 						</ul>
 					</div>
 					<div class="reviews">
 						<h2>Reviews</h2>
-						<ul>
-							<li>
-								<h3>From chuks the 27th January 2022<h3>
+						<ul role="tablist">
+							<li role="tab">
+								<h3>From chuks the 27th January 2022</h3>
 								<p>The services are top notch</p>
 							</li>
 						</ul>
@@ -152,19 +152,19 @@
 					</div>
 					<div class="amenities">
 						<h2>Amenities</h2>
-						<ul>
-							<li class="pet">Pets Friendly</li>
-							<li class="tv">TV</li>
+						<ul role="tablist">
+							<li role="tab" class="pet">Pets Friendly</li>
+							<li role="tab" class="tv">TV</li>
 						</ul>
 					</div>
-					<div class="reviews" aria-label="Reviews of the place">
+					<div class="reviews">
 						<h2>Reviews</h2>
-						<ul>
-							<li>
+						<ul role="tablist">
+							<li role="tab">
 								<h3>From Bob Dylan the 27th January 2013</h3>
 								<p>facilities are great</p>
 							</li>
-							<li>
+							<li role="tab">
 								<h3>From Mary TT the 27th January 2023</h3>
 								<p>I love this place</p>
 							</li>
