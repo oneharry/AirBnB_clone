@@ -62,7 +62,7 @@ ul {
 /* RESPONSIVENES */
 
 @media screen and (max-width: 768) {
-	.filter {
+	.filters {
 		max-width: 70%;
 	}
 }
