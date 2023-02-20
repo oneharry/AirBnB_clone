@@ -108,6 +108,9 @@ ul {
 	flex-direction: column;
 	padding: 20px;
 }
+.places .pet p, .places .wifi p, .places .tv p {
+	padding-left: 30px;
+}
 .amenities p {
 }
 .reviews h3 {
