@@ -80,6 +80,7 @@ article h2 {
 .places .amenities, .places .reviews {
 	margin-top: 40px;
 	width: 100%;
+	margin-left: 0;
 }
 .amenities h2, .reviews h2 {
 	font-size: 16px;
