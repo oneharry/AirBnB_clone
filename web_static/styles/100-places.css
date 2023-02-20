@@ -66,12 +66,12 @@ article h2 {
 }
 .places .max_guest, .places .number_rooms, .places .number_bathrooms {
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	width: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 30px 0;
+	padding: 20px 0;
 }
 .places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
 }
