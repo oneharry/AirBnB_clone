@@ -107,10 +107,9 @@ ul {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	padding-left: 1px;
+	padding-right: 50px;
 }
 .places .pet p, .places .wifi p, .places .tv p {
-	padding-left: 120px;
 }
 .amenities p {
 }
