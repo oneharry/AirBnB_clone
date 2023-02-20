@@ -108,11 +108,11 @@ ul {
 	padding: 20px;
 	padding-left: 80px;
 }
-.reviews h3 {
+.places .reviews h3 {
 	font-size: 14px;
 	text-align: start;
 }
-.reviews p {
+.places .reviews p {
 	font-size: 12px;
 	text-align: start;
 }
