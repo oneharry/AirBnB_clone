@@ -72,7 +72,7 @@ article h2 {
 	flex-direction: column;
 	justify-content: flex-end;
 }
-.places .max_guest ip, .places .number_rooms ip,.places .number_bathrooms ip {
+.places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
 	margin: auto auto 0;
 }
 .places .amenities, .places .reviews {
