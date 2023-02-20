@@ -105,6 +105,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	margin: 15px auto;
 }
 .amenities p {
 }
