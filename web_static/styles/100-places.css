@@ -111,6 +111,7 @@ ul {
 .places .reviews h3 {
 	font-size: 14px;
 	text-align: start;
+	width: 100%;
 	background-color: red;
 }
 .places .reviews p {
