@@ -70,10 +70,10 @@ article h2 {
 	width: 100px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
+	padding: 30px 0;
 }
 .places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
-	margin: auto auto 0;
 }
 .places .amenities, .places .reviews {
 	margin-top: 40px;
