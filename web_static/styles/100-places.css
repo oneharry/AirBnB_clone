@@ -25,11 +25,9 @@
 article h2 {
 	font-size: 30px;
 	margin: 0 auto;
-}
-
-article h2 {
 	text-align: center;
 }
+
 .places .price_by_night {
 	color: #FF5A5F;
 	border-radius: 50%;
@@ -43,7 +41,7 @@ article h2 {
 	position: relative;
 	bottom: 35px;
 	left: 320px;
-	margin-bottom: 0;
+	margin-bottom: -30px;
 }
 
 .information {
