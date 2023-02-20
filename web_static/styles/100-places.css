@@ -88,17 +88,23 @@ article h2 {
 ul {
 	list-style: none;
 }
-.amenities .pet {
+.places .pet {
 	background-image: url("../images/icon_pets.png");
 	background-repeat: no-repeat;
 }
-.amenities .tv {
+.places .tv {
 	background-image: url("../images/icon_tv.png");
 	background-repeat: no-repeat;
 }
-.amenities .wifi {
+.places .wifi {
 	background-image: url("../images/icon_wifi.png");
 	background-repeat: no-repeat;
+}
+.places .pet, .places .wifi, .places .tv {
+	background-position: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .amenities p {
 }
