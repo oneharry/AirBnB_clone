@@ -71,7 +71,7 @@ article h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	padding: 20px 0;
+	padding: 20px 0 0;
 	
 }
 .places .max_guest p, .places .number_rooms p,.places .number_bathrooms p {
