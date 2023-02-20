@@ -100,12 +100,17 @@ ul {
 	background-image: url("../images/icon_wifi.png");
 	background-repeat: no-repeat;
 }
+.places .amenities {
+	display: flex;
+	flex-direction: column;
+}
 .places .pet, .places .wifi, .places .tv {
 	background-position: left;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	margin: 15px auto;
+	font-size: 16px;
 }
 .amenities p {
 }
