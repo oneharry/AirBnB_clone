@@ -70,7 +70,6 @@ article h2 {
 	width: 100px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	padding: 20px 0;
 	
 }
