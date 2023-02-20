@@ -110,7 +110,7 @@ ul {
 	padding-left: 1px;
 }
 .places .pet p, .places .wifi p, .places .tv p {
-	padding-right: 90px;
+	padding-left: 120px;
 }
 .amenities p {
 }
