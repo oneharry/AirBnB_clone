@@ -43,6 +43,7 @@ article h2 {
 	position: relative;
 	bottom: 35px;
 	left: 320px;
+	margin-bottom: 0;
 }
 
 .information {
@@ -52,6 +53,7 @@ article h2 {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
+	margin-top: 0;
 }
 .information .max_guest {
 	background-image: url("../images/icon_group.png");
@@ -108,7 +110,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
-	padding-left: 90px;
+	padding-left: 80px;
 }
 .places .pet p, .places .wifi p, .places .tv p {
 }
