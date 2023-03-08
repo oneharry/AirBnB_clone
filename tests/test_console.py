@@ -67,8 +67,7 @@ class TestConsole(unittest.TestCase):
     def test_EOF(self):
         """Test: EOF"""
         with patch('sys.stdout', new=StringIO()) as f:
-            HBNBCommand().onecmd("")
-            self.assertEqual(f.getvalue(), "")
+            self.assertTrue(HBNBCommand().onecmd("EOF"))
 
     """==== Specific tests for the Create method ===="""
 
